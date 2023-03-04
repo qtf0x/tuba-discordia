@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bound_box",
+  "name": "obj_player_attack",
   "spriteId": {
-    "name": "spr_bound_box",
-    "path": "sprites/spr_bound_box/spr_bound_box.yy",
+    "name": "spr_attack_tmp",
+    "path": "sprites/spr_attack_tmp/spr_attack_tmp.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,12 +23,7 @@
   "physicsFriction": 0.2,
   "physicsStartAwake": true,
   "physicsKinematic": false,
-  "physicsShapePoints": [
-    {"x":0.0,"y":0.0,},
-    {"x":128.0,"y":0.0,},
-    {"x":128.0,"y":128.0,},
-    {"x":0.0,"y":128.0,},
-  ],
+  "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
   "overriddenProperties": [],

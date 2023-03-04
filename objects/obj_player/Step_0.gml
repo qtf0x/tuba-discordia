@@ -6,10 +6,20 @@ key_right = keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed(vk_space);
 
 // calculate movement
-var _move = key_right - key_left; // bools are integers (thank god)
-
-hsp = _move * walksp; // increment/decrement horizontal mvmt
+hsp = hsp + hacc; // increment/decrement horizontal mvmt
 vsp = vsp + grv;      // simulate acceleration due to gravity
+
+// simulate friction with floor/air
+if (abs(hsp) <= 1) { // holy shit gamemaker is the worst language AAAAAAA
+	hsp = 0;
+	hacc = 0;
+}
+
+// really hacky way to handle walking as separate from physics (we'll fix it later)
+if (hacc == 0) {
+	var _move = key_right - key_left; // bools are integers (thank god)
+    hsp = _move * walksp; // increment/decrement horizontal mvmt
+}
 
 // jumping
 if (place_meeting(x, y + 1, obj_bound_box) && key_jump)
@@ -24,8 +34,6 @@ if (place_meeting(x + hsp, y, obj_bound_box))
 	hsp = 0; // don't move again
 }
 
-x = x + hsp;
-
 // vertical collision
 if (place_meeting(x, y + vsp, obj_bound_box))
 {
@@ -35,7 +43,6 @@ if (place_meeting(x, y + vsp, obj_bound_box))
 	vsp = 0; // don't move again
 }
 
-y = y + vsp;
-
-if (hsp != 0)
-	image_xscale = sign(-hsp); // flip image for facing left/right
+// actually move
+x += hsp;
+y += vsp;

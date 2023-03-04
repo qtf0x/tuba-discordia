@@ -2,14 +2,31 @@
   "resourceType": "GMProject",
   "resourceVersion": "1.6",
   "name": "Tuba Discordia",
-  "AudioGroups": [
-    {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
+  "resources": [
+    {"id":{"name":"spr_attack_tmp","path":"sprites/spr_attack_tmp/spr_attack_tmp.yy",},"order":2,},
+    {"id":{"name":"spr_bound_box","path":"sprites/spr_bound_box/spr_bound_box.yy",},"order":1,},
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":2,},
+    {"id":{"name":"spr_player_tmp","path":"sprites/spr_player_tmp/spr_player_tmp.yy",},"order":0,},
+    {"id":{"name":"obj_player_attack","path":"objects/obj_player_attack/obj_player_attack.yy",},"order":3,},
+    {"id":{"name":"spr_player_shoot","path":"sprites/spr_player_shoot/spr_player_shoot.yy",},"order":3,},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
+    {"id":{"name":"obj_bound_box","path":"objects/obj_bound_box/obj_bound_box.yy",},"order":1,},
+    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
-  "configs": {
-    "children": [],
-    "name": "Default",
-  },
+  "Options": [
+    {"name":"operagx","path":"options/operagx/options_operagx.yy",},
+    {"name":"Main","path":"options/main/options_main.yy",},
+    {"name":"Linux","path":"options/linux/options_linux.yy",},
+  ],
   "defaultScriptType": 1,
+  "isEcma": false,
+  "configs": {
+    "name": "Default",
+    "children": [],
+  },
+  "RoomOrderNodes": [
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+  ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Extensions","folderPath":"folders/Extensions.yy","order":14,},
@@ -26,23 +43,14 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":8,},
   ],
-  "IncludedFiles": [],
-  "isEcma": false,
-  "MetaData": {
-    "IDEVersion": "2023.1.1.62",
-  },
-  "resources": [
-    {"id":{"name":"spr_bound_box","path":"sprites/spr_bound_box/spr_bound_box.yy",},"order":1,},
-    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":2,},
-    {"id":{"name":"spr_player_tmp","path":"sprites/spr_player_tmp/spr_player_tmp.yy",},"order":0,},
-    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
-    {"id":{"name":"obj_bound_box","path":"objects/obj_bound_box/obj_bound_box.yy",},"order":1,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
-  ],
-  "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+  "AudioGroups": [
+    {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
   ],
   "TextureGroups": [
-    {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
+    {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","isScaled":true,"compressFormat":"bz2","loadType":"default","directory":"","autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,},
   ],
+  "IncludedFiles": [],
+  "MetaData": {
+    "IDEVersion": "2022.1100.0.248",
+  },
 }
