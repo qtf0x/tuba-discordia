@@ -9,8 +9,12 @@ key_jump = keyboard_check_pressed(vk_space);
 hsp = hsp + hacc; // increment/decrement horizontal mvmt
 vsp = vsp + grv;      // simulate acceleration due to gravity
 
+// terminal velocity check
+if (vsp > terminal_velocity)
+	vsp = terminal_velocity;
+
 // simulate friction with floor/air
-if (abs(hsp) <= 1) { // holy shit gamemaker is the worst language AAAAAAA
+if (abs(hsp) < 0.001 || sign(hsp) != sign(hsp - hacc)) { // holy shit gamemaker is the worst language AAAAAAA
 	hsp = 0;
 	hacc = 0;
 }
