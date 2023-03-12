@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_player_attack",
+  "name": "obj_ladder",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "prefabs",
+    "path": "folders/Objects/blocks/prefabs.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -25,10 +25,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_attack_tmp",
-    "path": "sprites/spr_attack_tmp/spr_attack_tmp.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

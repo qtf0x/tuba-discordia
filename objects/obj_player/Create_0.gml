@@ -1,12 +1,26 @@
 /// @desc Establish some key variables
+event_inherited();
 
+hp = 3;		// Health
+spd = 4;	// baseline speed for walking
 hsp = 0;    // horizontal speed
+
+// Jumping attributes
 vsp = 0;    // vertical speed
-grv = 0.6;  // gravity
+grv = 0.5;  // gravity
+grounded = false; // For jumps
+
+// Acceleration attributes
 hacc = 0; // horizontal acceleration
 fric = 0.5; // friction constant
 terminal_velocity = 50; // terminal velocity
-walksp = 6; // walking speed
-jumpsp = 20; // jumping speed
+jump_spd = 15; // jumping speed
 
-h_baseline = 0; // baseline velocity used for walking
+
+// Climbing attributes.
+climbing = false
+
+
+// Trampoline
+force_jump = false;
+jump_spd_bounce = 0;

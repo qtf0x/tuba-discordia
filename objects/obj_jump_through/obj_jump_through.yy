@@ -1,13 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_player_attack",
-  "eventList": [],
+  "name": "obj_jump_through",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "prefabs",
+    "path": "folders/Objects/blocks/prefabs.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -25,10 +27,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_attack_tmp",
-    "path": "sprites/spr_attack_tmp/spr_attack_tmp.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

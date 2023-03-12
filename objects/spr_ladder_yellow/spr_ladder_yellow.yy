@@ -1,15 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_player_attack",
+  "name": "spr_ladder_yellow",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "assets",
+    "path": "folders/Objects/blocks/assets.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_ladder",
+    "path": "objects/obj_ladder/obj_ladder.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -26,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_attack_tmp",
-    "path": "sprites/spr_attack_tmp/spr_attack_tmp.yy",
+    "name": "spr_ladder",
+    "path": "sprites/spr_ladder/spr_ladder.yy",
   },
   "spriteMaskId": null,
   "visible": true,
