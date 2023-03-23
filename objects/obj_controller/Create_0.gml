@@ -14,3 +14,10 @@ global.pause = false;
 game_set_speed(60, gamespeed_fps);
 global.game_speed = game_get_speed(gamespeed_fps); // Game speed in fps
 
+// music switch
+switch (room) {
+case rm_dev:
+case rm_core:
+	audio_play_sound(mus_core, 10, true);
+	break;
+}

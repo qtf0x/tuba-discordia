@@ -1,8 +1,16 @@
 /// @desc Establish some key variables
 event_inherited();
 
+//--------Dialogue Stuff
+reset_dialogue_defaults();
+myPortrait			= spr_player_shoot_small;
+myVoice				= snd_voice2;
+myFont				= fnt_dialogue;
+myName				= "?????";
+
+//--------Movement Stuff
 hp = 3;		// Health
-spd = 4;	// baseline speed for walking
+spd = 7;	// baseline speed for walking
 hsp = 0;    // horizontal speed
 
 // Jumping attributes
@@ -22,7 +30,7 @@ climbing = false
 
 // Shooting attributes
 shooting = false;
-shoot_delay = 180; // 3 seconds
+shoot_delay = 90; // 1.5 seconds?
 
 
 // Trampoline

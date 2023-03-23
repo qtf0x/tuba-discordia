@@ -38,5 +38,5 @@
     "path": "sprites/spr_bound_box/spr_bound_box.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

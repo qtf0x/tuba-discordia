@@ -1,6 +1,6 @@
 /// @description initialize camera
 
-#macro view view_camera[0]
+var view = view_camera[0];
 cam_w = camera_get_view_width(view);
 cam_h = camera_get_view_height(view);
 cam_spd = .1; // Used for camera momentum using lerp
