@@ -20,6 +20,10 @@ jump_spd = 15; // jumping speed
 // Climbing attributes.
 climbing = false
 
+// Shooting attributes
+shooting = false;
+shoot_delay = 180; // 3 seconds
+
 
 // Trampoline
 force_jump = false;

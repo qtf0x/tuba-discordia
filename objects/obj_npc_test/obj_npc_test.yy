@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bound_box",
+  "name": "obj_npc_test",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -10,8 +10,8 @@
     "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "obj_block",
-    "path": "objects/obj_block/obj_block.yy",
+    "name": "obj_talkable",
+    "path": "objects/obj_talkable/obj_talkable.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -24,19 +24,14 @@
   "physicsRestitution": 0.1,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsShapePoints": [
-    {"x":0.0,"y":0.0,},
-    {"x":128.0,"y":0.0,},
-    {"x":128.0,"y":128.0,},
-    {"x":0.0,"y":128.0,},
-  ],
+  "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bound_box",
-    "path": "sprites/spr_bound_box/spr_bound_box.yy",
+    "name": "spr_player_tmp",
+    "path": "sprites/spr_player_tmp/spr_player_tmp.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

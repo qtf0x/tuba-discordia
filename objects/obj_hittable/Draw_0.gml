@@ -1,6 +1,6 @@
 /// @description Draw event
 
-if (global.game_state == game_states.PLAYING){
+if (global.game_state != game_states.GAMEOVER){
 	image_speed = 1;
 	if (hit_flash_delay > 0) { 
 		if (int64(hit_flash_delay) % 5 == 0){ // Flicker effect

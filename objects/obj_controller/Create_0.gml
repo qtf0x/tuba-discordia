@@ -3,7 +3,7 @@
 enum game_states {
 	PLAYING,
 	GAMEOVER,
-	GAMEWON,
+	TALKING
 };
 
 

@@ -9,6 +9,7 @@ if (global.game_state == game_states.GAMEOVER){
 	global.pause = true;
 }
 
+
 if (global.pause == true){
 	instance_deactivate_all(true);
 	instance_activate_object(obj_camera);

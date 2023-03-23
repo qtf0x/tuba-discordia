@@ -27,7 +27,7 @@ if (hacc == 0) {
 }
 
 if(hmove != 0) {
-	image_xscale = hmove; // Flip sprite based on which keys are pressed
+	image_xscale = -sign(hmove); // Flip sprite based on which keys are pressed
 	//sprite_index = spr_player_walk;
 } else {
 	//sprite_index = spr_player_idle;	
