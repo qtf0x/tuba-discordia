@@ -1,5 +1,9 @@
 /// @desc Core Player Logic
 event_inherited();
+
+// don't allow movement if talking
+if (instance_exists(obj_textbox) || instance_exists(obj_textevent)) exit;
+
 // get player inputs (use WASD like a sane person)
 var key_left = keyboard_check(ord("A"));
 var key_right = keyboard_check(ord("D"));
