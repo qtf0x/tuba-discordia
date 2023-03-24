@@ -13,8 +13,8 @@
     "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "par_speaker",
-    "path": "objects/par_speaker/par_speaker.yy",
+    "name": "obj_talkable",
+    "path": "objects/obj_talkable/obj_talkable.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
