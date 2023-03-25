@@ -1,6 +1,10 @@
 /// @desc Core Player Logic
 event_inherited();
 
+// bounce delay
+if (bounced && alarm[1] == -1)
+	alarm[1] = 10; // idk short time
+
 // don't allow movement if talking
 if (instance_exists(obj_textbox) || instance_exists(obj_textevent)) exit;
 
@@ -13,6 +17,12 @@ var key_jump = keyboard_check(vk_space);
 
 var vmove = key_down - key_up;
 var hmove = key_right - key_left; // bools are integers (thank god)
+
+// disallow movement when bouncing
+if (bounced) {
+	vmove = 0;
+	hmove = 0;
+}
 
 // calculate movement
 hsp += hacc; // increment/decrement horizontal mvmt

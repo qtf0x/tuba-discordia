@@ -15,8 +15,11 @@ if (!shooting) {
 	}
 	else {
 		note.direction = point_direction(x, y, x - image_xscale, y);
-		hsp = image_xscale * note_spd; // player's velocity in opposite direction
-		hacc = image_xscale * -fric;
+		
+		if (!place_meeting(x, y + 1, obj_bound_box)) {
+			hsp = image_xscale * note_spd; // player's velocity in opposite direction
+			hacc = image_xscale * -fric;
+		}
 	}
 
 	note.speed = note_spd;

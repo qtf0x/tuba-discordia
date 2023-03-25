@@ -9,7 +9,7 @@ myFont				= fnt_dialogue;
 myName				= "?????";
 
 //--------Movement Stuff
-hp = 3;		// Health
+hp = 4;		// Health
 spd = 7;	// baseline speed for walking
 hsp = 0;    // horizontal speed
 

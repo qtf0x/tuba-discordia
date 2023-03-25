@@ -1,8 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_player_attack",
-  "eventList": [],
+  "name": "obj_spike",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_hittable","path":"objects/obj_hittable/obj_hittable.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -26,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_note_2_green",
-    "path": "sprites/spr_note_2_green/spr_note_2_green.yy",
+    "name": "spr_spike_up",
+    "path": "sprites/spr_spike_up/spr_spike_up.yy",
   },
   "spriteMaskId": null,
   "visible": true,
