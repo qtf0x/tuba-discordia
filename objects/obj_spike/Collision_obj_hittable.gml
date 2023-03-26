@@ -21,3 +21,6 @@ other.y += 2 * other.vsp;
 
 // don't allow play to move for a moment when bounced
 other.bounced = true;
+
+// activate shader
+other.hit = true;

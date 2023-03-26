@@ -21,3 +21,8 @@ case rm_core:
 	audio_play_sound(mus_core, 10, true);
 	break;
 }
+
+// coins, lives, etc.
+global.coins = 0;
+coin_frame = 0;
+image_speed = 0.1;
