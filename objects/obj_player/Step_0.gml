@@ -62,9 +62,8 @@ if(hmove != 0) {
 // Climbing logic. Are we about to hit a ladder.
 var ladder = instance_place(x, y + 1, obj_ladder);
 if (ladder) {
-	if ( (vmove < 0 && 
-	((bbox_bottom > ladder.bbox_top) || climbing)) ||  // Fix annoying bugs
-	   (vmove > 0 && 
+	if ( (vmove < 0 && (bbox_bottom > ladder.bbox_top) && !key_jump) ||  // Fix annoying bugs
+	   (vmove > 0 &&
 	   (!place_meeting(x, y + 1, obj_block)) && // Going down, is there a tile right below us?
 	   ((y < ladder.y && vsp >=0) || climbing) )) {
 		sprite_index = asset_get_index("spr_player_climb_" + current_sprite);
@@ -77,6 +76,22 @@ if (ladder) {
 		climbing = false;
 	}
 } else {
+	climbing = false;
+}
+
+// Am I jumping?
+
+if (((grounded || climbing) && key_jump || force_jump) &&
+	!(place_meeting(x, y - 1, obj_block))) {
+	//audio_play_sound(snd_jump, 1, false);
+	if (climbing){
+		vsp = 0;
+	} else {
+		vsp -= (jump_spd + jump_spd_bounce);
+	}
+	force_jump = false;
+	jump_spd_bounce = 0;
+	grounded = false;
 	climbing = false;
 }
 
@@ -113,16 +128,6 @@ var vertical_collision = false;
 
 
 
-// Am I jumping?
-if (((grounded || climbing) && key_jump || force_jump) &&
-	!(place_meeting(x, y - 1, obj_block))) {
-	//audio_play_sound(snd_jump, 1, false);
-	force_jump = false;
-	vsp -= (jump_spd + jump_spd_bounce);
-	jump_spd_bounce = 0;
-	grounded = false;
-	climbing = false;
-}
 
 // Vertical collision with a block
 var block = instance_place(x, y + vsp, obj_block);
