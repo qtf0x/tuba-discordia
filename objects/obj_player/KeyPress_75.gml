@@ -1,6 +1,8 @@
 /// @desc Shoot/play note
 
 if (!shooting) {
+	play_note();
+	
 	var note_spd = 20;
 
 	var note = instance_create_layer(x, y, "Instances", obj_player_attack);

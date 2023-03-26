@@ -1,11 +1,12 @@
 /// @description Global variables
 
+randomise(); // seed RNG
+
 enum game_states {
 	PLAYING,
 	GAMEOVER,
 	TALKING
 };
-
 
 global.game_state = game_states.PLAYING;
 global.pause = false;
@@ -26,3 +27,9 @@ case rm_core:
 global.coins = 0;
 coin_frame = 0;
 image_speed = 0.1;
+
+global.max_hp = 4;
+
+// last save location
+global.saved_x = 446;
+global.saved_y = 2303;
