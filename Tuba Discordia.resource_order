@@ -26,11 +26,11 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"FC_DialogueSystem","order":9,"path":"folders/Sprites/FC_DialogueSystem.yy",},
     {"name":"Notes","order":10,"path":"folders/Sprites/Notes.yy",},
-    {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
-    {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
     {"name":"Player","order":15,"path":"folders/Sprites/Player.yy",},
     {"name":"Default","order":2,"path":"folders/Sprites/Player/Default.yy",},
     {"name":"Trumpet","order":3,"path":"folders/Sprites/Player/Trumpet.yy",},
+    {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
+    {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_platform","order":5,"path":"sprites/spr_platform/spr_platform.yy",},

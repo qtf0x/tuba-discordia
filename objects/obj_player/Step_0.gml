@@ -65,7 +65,7 @@ if (ladder) {
 	if ( (vmove < 0 && 
 	((bbox_bottom > ladder.bbox_top) || climbing)) ||  // Fix annoying bugs
 	   (vmove > 0 && 
-	   (!place_meeting(x, y + 1, obj_block)) && 
+	   (!place_meeting(x, y + 1, obj_block)) && // Going down, is there a tile right below us?
 	   ((y < ladder.y && vsp >=0) || climbing) )) {
 		sprite_index = asset_get_index("spr_player_climb_" + current_sprite);
 		image_speed = 1;
@@ -97,10 +97,21 @@ if (climbing) {
 		vsp += grv; // Important, adds gravity only if player isn't climbing a ladder
 	 }
 } 
-// terminal velocity check
-if (vsp > terminal_velocity){
-	vsp = terminal_velocity;
+
+
+// Horizontal collision with a block.
+if (place_meeting(x + hsp, y, obj_block)) {
+	while (!place_meeting(x + sign(hsp), y, obj_block)) {
+		x += sign(hsp);
+	}
+	hsp = 0;
 }
+
+x += floor(hsp);
+
+var vertical_collision = false;
+
+
 
 // Am I jumping?
 if (((grounded || climbing) && key_jump || force_jump) &&
@@ -112,18 +123,6 @@ if (((grounded || climbing) && key_jump || force_jump) &&
 	grounded = false;
 	climbing = false;
 }
-
-
-// Horizontal collision with a block.
-if (place_meeting(x + hsp, y, obj_block)) {
-	while (!place_meeting(x + sign(hsp), y, obj_block)) {
-		x += sign(hsp);
-	}
-	hsp = 0;
-}
-
-
-var vertical_collision = false;
 
 // Vertical collision with a block
 var block = instance_place(x, y + vsp, obj_block);
@@ -165,7 +164,10 @@ if (vsp >= 0  // Player must be falling
 }
 
 
-
+// terminal velocity check
+if (vsp > terminal_velocity){
+	vsp = terminal_velocity;
+}
 
 // Jumping animation
 if (!grounded && !climbing){
@@ -181,5 +183,5 @@ if (!vertical_collision){
 }
 
 // Flooring, because you just gotta love gamemaker's imprecise as s**t collision system
-x += floor(hsp);
+
 y += floor(vsp);
