@@ -40,8 +40,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_idle_default",
-    "path": "sprites/spr_player_idle_default/spr_player_idle_default.yy",
+    "name": "spr_player_head",
+    "path": "sprites/spr_player_head/spr_player_head.yy",
   },
   "spriteMaskId": null,
   "visible": true,

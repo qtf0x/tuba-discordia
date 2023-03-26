@@ -132,6 +132,8 @@ var vertical_collision = false;
 // Vertical collision with a block
 var block = instance_place(x, y + vsp, obj_block);
 if (block) {
+	hops = 0; // reset rocket jumps
+	
 	while (!place_meeting(x, y + sign(vsp), block)) {
 		y += sign(vsp);
 	}
@@ -146,6 +148,7 @@ if (block) {
 if (vsp >= 0  // Player must be falling
 	&& !(climbing)){  // Not climbing
   // Ensure player is above platform's bbox
+  hops = 0; // reset rocket jumps
 
 	var platforms = ds_list_create();
 	var num_platforms = instance_place_list(x, y + vsp + 1, obj_jump_through, platforms, false);

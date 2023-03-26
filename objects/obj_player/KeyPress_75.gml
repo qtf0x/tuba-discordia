@@ -1,6 +1,8 @@
 /// @desc Shoot/play note
 
-if (!shooting) {
+if (!shooting && hops < max_hops) {
+	++hops;
+	
 	play_note();
 	
 	var note_spd = 20;
@@ -18,7 +20,7 @@ if (!shooting) {
 	else {
 		note.direction = point_direction(x, y, x - image_xscale, y);
 		
-		if (!place_meeting(x, y + 1, obj_bound_box) && !climbing) {
+		if (!place_meeting(x, y + 1, obj_bound_box) && !place_meeting(x, y + 1, obj_platform) && !place_meeting(x, y + 1, obj_moving_platform_horizontal) && !place_meeting(x, y + 1, obj_moving_platform_vertical) && !climbing) {
 			hsp = image_xscale * note_spd; // player's velocity in opposite direction
 			hacc = image_xscale * -fric;
 		}

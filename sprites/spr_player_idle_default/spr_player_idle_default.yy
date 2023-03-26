@@ -44,7 +44,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 11.0,
+    "length": 2.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,8 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c4a76fe4-63b4-4305-8d26-cb4f2e574e4b","path":"sprites/spr_player_idle_default/spr_player_idle_default.yy",},},},"Disabled":false,"id":"720159bb-26ef-4abd-8f92-2aa935cf96cb","IsCreationKey":false,"Key":0.0,"Length":10.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5701dbcf-5dd0-4c68-8de2-f68725327116","path":"sprites/spr_player_idle_default/spr_player_idle_default.yy",},},},"Disabled":false,"id":"286eb5a4-4d01-4f99-871b-52d1a3f30885","IsCreationKey":false,"Key":10.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c4a76fe4-63b4-4305-8d26-cb4f2e574e4b","path":"sprites/spr_player_idle_default/spr_player_idle_default.yy",},},},"Disabled":false,"id":"d826312d-5067-4c59-85af-b6caf220e3a5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5701dbcf-5dd0-4c68-8de2-f68725327116","path":"sprites/spr_player_idle_default/spr_player_idle_default.yy",},},},"Disabled":false,"id":"78fe9e70-2888-44db-8cbc-d24effd4fd6e","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

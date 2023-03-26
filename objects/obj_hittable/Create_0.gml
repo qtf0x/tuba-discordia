@@ -6,3 +6,4 @@ vsp = 0;
 hsp = 0;
 hacc = 0;
 bounced = false;
+invincible = false;

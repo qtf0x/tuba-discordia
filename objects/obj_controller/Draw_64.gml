@@ -12,8 +12,11 @@ if (global.game_state = game_states.GAMEOVER){
 draw_sprite_ext(spr_frames, 7, 84, 84, 1, 1, 0, c_white, 1);
 draw_sprite_ext(spr_clef_0_green, -1, 82, 71, 0.5, 0.5, 0, c_white, 1);
 
-for (var i = 0; i < obj_player.hp; ++i) {
-	draw_sprite_ext(spr_player_idle_default, 0, 170 + i * 50, 71, 0.5, 0.5, 0, c_white, 1);
+for (var i = 0; i < global.max_hp; ++i) {
+	if (i < obj_player.hp)
+		draw_sprite_ext(spr_player_head, 0, 180 + i * 75, 105, 1, 1, 0, c_white, 1);
+	else
+		draw_sprite_ext(spr_player_head_gs, 0, 180 + i * 75, 105, 1, 1, 0, c_white, 1);
 }
 
 // coins
