@@ -30,9 +30,13 @@ climbing = false
 
 // Shooting attributes
 shooting = false;
-shoot_delay = 90; // 1.5 seconds?
+shoot_delay = 30; // 0.5 seconds?
 
 
 // Trampoline
 force_jump = false;
 jump_spd_bounce = 0;
+
+// Animation
+image_speed = 1;
+current_sprite = "trumpet";

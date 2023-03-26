@@ -27,8 +27,6 @@ if (bounced) {
 // calculate movement
 hsp += hacc; // increment/decrement horizontal mvmt
 
-
-
 // simulate friction with floor/air
 if (abs(hsp) < 0.001 || sign(hsp) != sign(hsp - hacc)) { // holy shit gamemaker is the worst language AAAAAAA
 	hsp = 0;
@@ -42,9 +40,17 @@ if (hacc == 0) {
 
 if(hmove != 0) {
 	image_xscale = -sign(hmove); // Flip sprite based on which keys are pressed
-	//sprite_index = spr_player_walk;
+	if (shooting){
+		sprite_index = asset_get_index("spr_player_walk_shoot");
+	} else {
+		sprite_index = asset_get_index("spr_player_walk_" + current_sprite);
+	}
 } else {
-	//sprite_index = spr_player_idle;	
+	if (shooting){
+		sprite_index = asset_get_index("spr_player_idle_shoot");	
+	} else {
+		sprite_index = asset_get_index("spr_player_idle_" + current_sprite);	
+	}
 }
 
 
@@ -77,7 +83,8 @@ if (vsp > terminal_velocity){
 }
 
 // Am I jumping?
-if (grounded && key_jump || force_jump) {
+if ((grounded && key_jump || force_jump) &&
+	!(place_meeting(x, y - 1, obj_block))) {
 	//audio_play_sound(snd_jump, 1, false);
 	force_jump = false;
 	vsp -= (jump_spd + jump_spd_bounce);
@@ -96,17 +103,6 @@ if (place_meeting(x + hsp, y, obj_block)) {
 
 var vertical_collision = false;
 
-
-// horizontal collision
-if (place_meeting(x + hsp, y, obj_bound_box))
-{
-	while (!place_meeting(x + sign(hsp), y, obj_bound_box))
-		x = x + sign(hsp); // move 1 pixel at a time until collision occurs
-	
-	hsp = 0; // don't move again
-}
-
-// vertical collision
 // Vertical collision with a block
 if (place_meeting(x, y + vsp, obj_block)) {
 	while (!place_meeting(x, y + sign(vsp), obj_block)) {
@@ -147,10 +143,14 @@ if (vsp >= 0  // Player must be falling
 
 
 
-
-//if (!grounded){
-//	sprite_index = spr_octopus_purple_1;	
-//} 
+// Jumping animation
+if (!grounded){
+	if (shooting){
+		sprite_index = asset_get_index("spr_player_jump_shoot");
+	} else {
+		sprite_index = asset_get_index("spr_player_jump_" + current_sprite);
+	}
+} 
 
 if (!vertical_collision){
 	grounded = false;
@@ -158,5 +158,6 @@ if (!vertical_collision){
 
 
 // actually move
-x += hsp;
-y += vsp;
+// Flooring, because you just gotta love gamemaker's imprecise as shit collision system
+x += floor(hsp);
+y += floor(vsp);
