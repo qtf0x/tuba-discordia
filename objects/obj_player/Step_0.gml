@@ -38,18 +38,23 @@ if (hacc == 0) {
     hsp = hmove * spd; // increment/decrement horizontal mvmt
 }
 
+// Walking animations
 if(hmove != 0) {
 	image_xscale = -sign(hmove); // Flip sprite based on which keys are pressed
-	if (shooting){
-		sprite_index = asset_get_index("spr_player_walk_shoot");
-	} else {
-		sprite_index = asset_get_index("spr_player_walk_" + current_sprite);
+	if (!climbing && grounded){
+		if (shooting){
+			sprite_index = asset_get_index("spr_player_walk_shoot");
+		} else {
+			sprite_index = asset_get_index("spr_player_walk_" + current_sprite);
+		}
 	}
 } else {
-	if (shooting){
-		sprite_index = asset_get_index("spr_player_idle_shoot");	
-	} else {
-		sprite_index = asset_get_index("spr_player_idle_" + current_sprite);	
+	if (!climbing && grounded){
+		if (shooting){
+			sprite_index = asset_get_index("spr_player_idle_shoot");	
+		} else {
+			sprite_index = asset_get_index("spr_player_idle_" + current_sprite);	
+		}
 	}
 }
 
@@ -57,9 +62,16 @@ if(hmove != 0) {
 // Climbing logic. Are we about to hit a ladder.
 var ladder = instance_place(x, y + 1, obj_ladder);
 if (ladder) {
-	if (vmove < 0 && (bbox_bottom > ladder.bbox_top || climbing)) ||  // Fix annoying bugs
-	   (vmove == 0 && climbing) ||
-	   (vmove > 0) {
+	if ( (vmove < 0 && 
+	((bbox_bottom > ladder.bbox_top) || climbing)) ||  // Fix annoying bugs
+	   (vmove > 0 && 
+	   (!place_meeting(x, y + 1, obj_block)) && 
+	   ((y < ladder.y && vsp >=0) || climbing) )) {
+		sprite_index = asset_get_index("spr_player_climb_" + current_sprite);
+		image_speed = 1;
+		climbing = true;
+	} else if (vmove == 0 && climbing) {
+		image_speed = 0;
 		climbing = true;
 	} else {
 		climbing = false;
@@ -68,29 +80,39 @@ if (ladder) {
 	climbing = false;
 }
 
-// Gravity logic
 
 if (climbing) {
-	vsp = vmove * spd;
-	//sprite_index = spr_player_climb;
-} else if(!grounded){
-	vsp += grv; // Important, adds gravity only if player isn't climbing a ladder
-}
-
+	x = ladder.x;
+	hsp = 0;
+	if (shooting){
+		sprite_index = asset_get_index("spr_player_climb_shoot");
+		vsp = 0;
+	} else {
+		sprite_index = asset_get_index("spr_player_climb_" + current_sprite);
+		vsp = vmove * spd;
+	}
+} else {// Gravity logic
+	image_speed = 1;
+	 if(!grounded){
+		vsp += grv; // Important, adds gravity only if player isn't climbing a ladder
+	 }
+} 
 // terminal velocity check
 if (vsp > terminal_velocity){
 	vsp = terminal_velocity;
 }
 
 // Am I jumping?
-if ((grounded && key_jump || force_jump) &&
+if (((grounded || climbing) && key_jump || force_jump) &&
 	!(place_meeting(x, y - 1, obj_block))) {
 	//audio_play_sound(snd_jump, 1, false);
 	force_jump = false;
 	vsp -= (jump_spd + jump_spd_bounce);
 	jump_spd_bounce = 0;
 	grounded = false;
+	climbing = false;
 }
+
 
 // Horizontal collision with a block.
 if (place_meeting(x + hsp, y, obj_block)) {
@@ -104,12 +126,14 @@ if (place_meeting(x + hsp, y, obj_block)) {
 var vertical_collision = false;
 
 // Vertical collision with a block
-if (place_meeting(x, y + vsp, obj_block)) {
-	while (!place_meeting(x, y + sign(vsp), obj_block)) {
+var block = instance_place(x, y + vsp, obj_block);
+if (block) {
+	while (!place_meeting(x, y + sign(vsp), block)) {
 		y += sign(vsp);
 	}
-	if (vsp >= 0){ // Ensures player does not stick to the ceiling when jumping
+	if (vsp >= 0 && bbox_bottom >= block.bbox_top){ // Ensures player does not stick to the ceiling when jumping
 		grounded = true;
+		climbing = false;
 	}
 	vsp = 0;
 	vertical_collision = true;
@@ -144,7 +168,7 @@ if (vsp >= 0  // Player must be falling
 
 
 // Jumping animation
-if (!grounded){
+if (!grounded && !climbing){
 	if (shooting){
 		sprite_index = asset_get_index("spr_player_jump_shoot");
 	} else {
@@ -156,8 +180,6 @@ if (!vertical_collision){
 	grounded = false;
 }
 
-
-// actually move
-// Flooring, because you just gotta love gamemaker's imprecise as shit collision system
+// Flooring, because you just gotta love gamemaker's imprecise as s**t collision system
 x += floor(hsp);
 y += floor(vsp);

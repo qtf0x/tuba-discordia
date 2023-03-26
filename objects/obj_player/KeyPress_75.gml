@@ -16,7 +16,7 @@ if (!shooting) {
 	else {
 		note.direction = point_direction(x, y, x - image_xscale, y);
 		
-		if (!place_meeting(x, y + 1, obj_bound_box)) {
+		if (!place_meeting(x, y + 1, obj_bound_box) && !climbing) {
 			hsp = image_xscale * note_spd; // player's velocity in opposite direction
 			hacc = image_xscale * -fric;
 		}
