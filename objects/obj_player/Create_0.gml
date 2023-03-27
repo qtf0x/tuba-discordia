@@ -38,6 +38,7 @@ shoot_delay = 30; // 0.5 seconds?
 // Trampoline
 force_jump = false;
 jump_spd_bounce = 0;
+bounced = false;
 
 // Animation
 image_speed = 1;

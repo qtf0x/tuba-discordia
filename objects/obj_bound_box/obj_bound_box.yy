@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "prefabs",
+    "path": "folders/Objects/blocks/prefabs.yy",
   },
   "parentObjectId": {
     "name": "obj_block",
