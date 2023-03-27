@@ -15,7 +15,7 @@
     "name": "obj_coin",
     "path": "objects/obj_coin/obj_coin.yy",
   },
-  "persistent": false,
+  "persistent": true,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,

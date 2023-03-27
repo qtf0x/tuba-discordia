@@ -6,7 +6,10 @@ if (bounced && alarm[1] == -1)
 	alarm[1] = 10; // idk short time
 
 // don't allow movement if talking
-if (instance_exists(obj_textbox) || instance_exists(obj_textevent)) exit;
+if (instance_exists(obj_textbox) || 
+instance_exists(obj_textevent) || 
+instance_exists(obj_warp)
+) exit;
 
 // get player inputs (use WASD like a sane person)
 var key_left = keyboard_check(ord("A"));

@@ -1,6 +1,5 @@
 /// @description Move the view
 
-var view = view_camera[0];
 
 camera_set_view_size(view, cam_w, cam_h);
 
