@@ -17,4 +17,9 @@ if(instance_exists(obj_player)){
 	camera_set_view_pos(view,
 						lerp(_cur_x, _x, cam_spd), 
 						lerp(_cur_y, _y, cam_spd));
+						
+	cam_x = camera_get_view_x(view);
+	cam_y = camera_get_view_y(view);
+	cam_w = camera_get_view_width(view);
+	cam_h = camera_get_view_height(view);
 }

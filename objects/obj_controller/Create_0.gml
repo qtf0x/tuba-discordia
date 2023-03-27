@@ -31,5 +31,9 @@ image_speed = 0.1;
 global.max_hp = 4;
 
 // last save location
-global.saved_x = 446;
-global.saved_y = 2303;
+global.saved_x = 448;
+global.saved_y = 2368;
+global.saved_room = room;
+
+// Set randomizer
+randomise();

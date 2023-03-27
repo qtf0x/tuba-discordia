@@ -8,6 +8,7 @@ if (!shooting && hops < max_hops) {
 	var note_spd = 20;
 
 	var note = instance_create_layer(x, y, "Instances", obj_player_attack);
+	note.attack_power = attack_power;
 
 	if (keyboard_check(ord("W"))) {
 		note.direction = point_direction(x, y, x, y - 1);

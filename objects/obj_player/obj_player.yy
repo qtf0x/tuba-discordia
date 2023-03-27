@@ -40,8 +40,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_head",
-    "path": "sprites/spr_player_head/spr_player_head.yy",
+    "name": "spr_player_shoot",
+    "path": "sprites/spr_player_shoot/spr_player_shoot.yy",
   },
   "spriteMaskId": null,
   "visible": true,

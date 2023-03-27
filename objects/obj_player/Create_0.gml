@@ -43,3 +43,7 @@ bounced = false;
 // Animation
 image_speed = 1;
 current_sprite = "trumpet";
+hit_flash_multiplier = 1.5;
+
+// Attack power
+attack_power = 1;

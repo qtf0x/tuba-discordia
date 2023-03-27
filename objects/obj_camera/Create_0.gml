@@ -1,6 +1,8 @@
 /// @description initialize camera
 
 view = view_camera[0];
+cam_x = camera_get_view_x(view);
+cam_y = camera_get_view_y(view);
 cam_w = camera_get_view_width(view);
 cam_h = camera_get_view_height(view);
 cam_spd = .1; // Used for camera momentum using lerp

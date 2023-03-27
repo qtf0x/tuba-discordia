@@ -5,6 +5,7 @@ if (in_use) exit; // don't spam me pls
 // save location
 global.saved_x = x;
 global.saved_y = y - 16;
+global.saved_room = room;
 
 // restore health
 obj_player.hp = global.max_hp;
