@@ -100,6 +100,7 @@ if (((grounded || climbing) && key_jump || force_jump) &&
 
 
 if (climbing) {
+	hops = 0; // reset rocket jumps
 	x = ladder.x;
 	hsp = 0;
 	if (shooting){
@@ -135,7 +136,10 @@ var vertical_collision = false;
 // Vertical collision with a block
 var block = instance_place(x, y + vsp, obj_block);
 if (block) {
-	hops = 0; // reset rocket jumps
+	
+	// if block below player
+	if (block.y > y)
+		hops = 0; // reset rocket jumps
 	
 	while (!place_meeting(x, y + sign(vsp), block)) {
 		y += sign(vsp);
@@ -151,7 +155,7 @@ if (block) {
 if (vsp >= 0  // Player must be falling
 	&& !(climbing)){  // Not climbing
   // Ensure player is above platform's bbox
-  hops = 0; // reset rocket jumps
+  
 
 	var platforms = ds_list_create();
 	var num_platforms = instance_place_list(x, y + vsp + 1, obj_jump_through, platforms, false);
@@ -161,6 +165,7 @@ if (vsp >= 0  // Player must be falling
 			var platform = platforms[| i];
 			 
 			if (platform && bbox_bottom <= platform.bbox_top){ // Extra check for program safety
+				hops = 0; // reset rocket jumps
 				while (!place_meeting(x, y + 1, platform)) { // Perfect pixel collision
 					y += 1;
 				}
