@@ -2,6 +2,8 @@
 
 if (in_use) exit; // don't spam me pls
 
+if (abs(obj_player.x - x) > 128 || abs(obj_player.y - y) > 128) exit; // not close enough
+
 // save location
 global.saved_x = x;
 global.saved_y = y - 16;

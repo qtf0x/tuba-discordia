@@ -1,6 +1,8 @@
 /// @desc Establish some key variables
 event_inherited();
 
+keys = 0; // keys currently held
+
 //--------Dialogue Stuff
 reset_dialogue_defaults();
 myPortrait			= spr_player_shoot_small;

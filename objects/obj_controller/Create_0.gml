@@ -18,8 +18,8 @@ global.game_speed = game_get_speed(gamespeed_fps); // Game speed in fps
 // music switch
 switch (room) {
 case rm_dev:
-case rm_core:
-	audio_play_sound(mus_core, 10, true);
+case rm_forest:
+	audio_play_sound(mus_main, 10, true);
 	break;
 }
 

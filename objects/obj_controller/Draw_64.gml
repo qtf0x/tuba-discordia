@@ -19,6 +19,11 @@ for (var i = 0; i < global.max_hp; ++i) {
 		draw_sprite_ext(spr_player_head_gs, 0, 180 + i * 75, 105, 1, 1, 0, c_white, 1);
 }
 
+// keys
+for (var i = 0; i < obj_player.keys; ++i) {
+	draw_sprite_ext(spr_key, 0, 350 + i * 75, 135, 1, 1, 0, c_white, 1);
+}
+
 // coins
 coin_frame += image_speed;
 draw_sprite_ext(spr_coin_silver_spin, coin_frame, 167, 145, 1, 1, 0, c_white, 1);

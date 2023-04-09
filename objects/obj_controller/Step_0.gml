@@ -17,10 +17,10 @@ if (global.pause == true){
 }
 
 // make sure player stays out of tutorial area after
-if (room == rm_core && global.saved_room == rm_start_0) {
+if (room == rm_forest && global.saved_room == rm_start_0) {
 	global.saved_x = 517;
 	global.saved_y = 2466;
-	global.saved_room = rm_core;
+	global.saved_room = rm_forest;
 }
 
 // check for death
