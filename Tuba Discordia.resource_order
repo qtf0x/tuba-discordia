@@ -43,6 +43,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"spr_platform","order":5,"path":"sprites/spr_platform/spr_platform.yy",},
+    {"name":"spr_chest_open","order":33,"path":"sprites/spr_chest_open/spr_chest_open.yy",},
     {"name":"spr_coin_brown_spin","order":2,"path":"sprites/spr_coin_brown_spin/spr_coin_brown_spin.yy",},
     {"name":"spr_coin_silver_spin","order":7,"path":"sprites/spr_coin_silver_spin/spr_coin_silver_spin.yy",},
     {"name":"spr_dialoguefinished","order":4,"path":"sprites/spr_dialoguefinished/spr_dialoguefinished.yy",},
@@ -76,6 +77,7 @@
     {"name":"obj_stool","order":1,"path":"objects/obj_stool/obj_stool.yy",},
     {"name":"spr_player_idle_shoot","order":3,"path":"sprites/spr_player_idle_shoot/spr_player_idle_shoot.yy",},
     {"name":"spr_player_jump_trumpet","order":1,"path":"sprites/spr_player_jump_trumpet/spr_player_jump_trumpet.yy",},
+    {"name":"obj_chest","order":1,"path":"objects/obj_chest/obj_chest.yy",},
     {"name":"snd_A5","order":9,"path":"sounds/snd_A5/snd_A5.yy",},
     {"name":"spr_stool","order":18,"path":"sprites/spr_stool/spr_stool.yy",},
     {"name":"spr_bound_box","order":1,"path":"sprites/spr_bound_box/spr_bound_box.yy",},
@@ -103,6 +105,7 @@
     {"name":"snd_tom_C4","order":5,"path":"sounds/snd_tom_C4/snd_tom_C4.yy",},
     {"name":"spr_player_climb_trumpet","order":7,"path":"sprites/spr_player_climb_trumpet/spr_player_climb_trumpet.yy",},
     {"name":"snd_voice1","order":1,"path":"sounds/snd_voice1/snd_voice1.yy",},
+    {"name":"spr_chest_closed","order":32,"path":"sprites/spr_chest_closed/spr_chest_closed.yy",},
     {"name":"spr_cave_background","order":13,"path":"sprites/spr_cave_background/spr_cave_background.yy",},
     {"name":"obj_player_attack","order":1,"path":"objects/obj_player_attack/obj_player_attack.yy",},
     {"name":"spr_warp_block","order":22,"path":"sprites/spr_warp_block/spr_warp_block.yy",},

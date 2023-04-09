@@ -61,6 +61,7 @@
   },
   "resources": [
     {"id":{"name":"spr_platform","path":"sprites/spr_platform/spr_platform.yy",},},
+    {"id":{"name":"spr_chest_open","path":"sprites/spr_chest_open/spr_chest_open.yy",},},
     {"id":{"name":"spr_coin_brown_spin","path":"sprites/spr_coin_brown_spin/spr_coin_brown_spin.yy",},},
     {"id":{"name":"spr_coin_silver_spin","path":"sprites/spr_coin_silver_spin/spr_coin_silver_spin.yy",},},
     {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},
@@ -100,6 +101,7 @@
     {"id":{"name":"obj_stool","path":"objects/obj_stool/obj_stool.yy",},},
     {"id":{"name":"spr_player_idle_shoot","path":"sprites/spr_player_idle_shoot/spr_player_idle_shoot.yy",},},
     {"id":{"name":"spr_player_jump_trumpet","path":"sprites/spr_player_jump_trumpet/spr_player_jump_trumpet.yy",},},
+    {"id":{"name":"obj_chest","path":"objects/obj_chest/obj_chest.yy",},},
     {"id":{"name":"snd_A5","path":"sounds/snd_A5/snd_A5.yy",},},
     {"id":{"name":"spr_stool","path":"sprites/spr_stool/spr_stool.yy",},},
     {"id":{"name":"spr_bound_box","path":"sprites/spr_bound_box/spr_bound_box.yy",},},
@@ -136,6 +138,7 @@
     {"id":{"name":"snd_tom_C4","path":"sounds/snd_tom_C4/snd_tom_C4.yy",},},
     {"id":{"name":"spr_player_climb_trumpet","path":"sprites/spr_player_climb_trumpet/spr_player_climb_trumpet.yy",},},
     {"id":{"name":"snd_voice1","path":"sounds/snd_voice1/snd_voice1.yy",},},
+    {"id":{"name":"spr_chest_closed","path":"sprites/spr_chest_closed/spr_chest_closed.yy",},},
     {"id":{"name":"spr_cave_background","path":"sprites/spr_cave_background/spr_cave_background.yy",},},
     {"id":{"name":"obj_player_attack","path":"objects/obj_player_attack/obj_player_attack.yy",},},
     {"id":{"name":"spr_warp_block","path":"sprites/spr_warp_block/spr_warp_block.yy",},},

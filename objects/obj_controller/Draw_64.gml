@@ -21,7 +21,7 @@ for (var i = 0; i < global.max_hp; ++i) {
 
 // keys
 for (var i = 0; i < obj_player.keys; ++i) {
-	draw_sprite_ext(spr_key, 0, 350 + i * 75, 135, 1, 1, 0, c_white, 1);
+	draw_sprite_ext(spr_key, 0, 350 + i * 75, 137, 1, 1, 0, c_white, 1);
 }
 
 // coins
