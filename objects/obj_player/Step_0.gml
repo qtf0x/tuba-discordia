@@ -119,11 +119,13 @@ if (climbing) {
 
 
 // Horizontal collision with a block.
-if (place_meeting(x + hsp, y, obj_block)) {
-	while (!place_meeting(x + sign(hsp), y, obj_block)) {
+var block = instance_place(x + hsp, y, obj_block);
+if (block) {
+	while (!place_meeting(x + sign(hsp), y, block)) {
 		x += sign(hsp);
 	}
 	hsp = 0;
+	block.player_collision = true;
 }
 
 x += floor(hsp);
@@ -134,7 +136,7 @@ var vertical_collision = false;
 
 
 // Vertical collision with a block
-var block = instance_place(x, y + vsp, obj_block);
+block = instance_place(x, y + vsp, obj_block);
 if (block) {
 	
 	// if block below player
@@ -150,6 +152,7 @@ if (block) {
 	}
 	vsp = 0;
 	vertical_collision = true;
+	block.player_collision = true;
 } 
 // all collisions with jump_through platforms
 if (vsp >= 0  // Player must be falling

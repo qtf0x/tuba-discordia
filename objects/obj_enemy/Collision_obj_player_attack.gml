@@ -1,7 +1,7 @@
 hurt(id, other.attack_power, snd_hurt);
 
 // Knockback logic
-if (knockback_timer <= 0 && hit_flash_delay <= 0){
+if (knockback_timer <= 0 && hit_flash_delay <= 0 && has_knockback){
 	is_knockback = true;
 	var dir = point_direction(other.x, other.y, x, y);
 	var len = point_distance(other.x, other.y, x, y);
