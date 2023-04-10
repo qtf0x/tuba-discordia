@@ -5,8 +5,6 @@
 event_inherited();
 
 hp = 2;
-vsp = 0;
-hsp = 0;
 spd = 6;
 
 flying_timer = 10;

@@ -11,6 +11,7 @@
     {"name":"assets","order":1,"path":"folders/Objects/blocks/assets.yy",},
     {"name":"prefabs","order":2,"path":"folders/Objects/blocks/prefabs.yy",},
     {"name":"Coins","order":5,"path":"folders/Objects/Coins.yy",},
+    {"name":"collectibles","order":11,"path":"folders/Objects/collectibles.yy",},
     {"name":"enemy","order":9,"path":"folders/Objects/enemy.yy",},
     {"name":"FC_DialogueSystem","order":4,"path":"folders/Objects/FC_DialogueSystem.yy",},
     {"name":"hazards","order":8,"path":"folders/Objects/hazards.yy",},
@@ -39,7 +40,6 @@
     {"name":"Trumpet","order":3,"path":"folders/Sprites/Player/Trumpet.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"collectibles","order":11,"path":"folders/Objects/collectibles.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_platform","order":5,"path":"sprites/spr_platform/spr_platform.yy",},
