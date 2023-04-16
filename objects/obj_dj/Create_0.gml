@@ -1,0 +1,1 @@
+global.current_bg_music =  mus_main;

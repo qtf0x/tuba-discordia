@@ -5,16 +5,6 @@ if (keyboard_check_pressed(vk_escape)) {
 	game_end();
 }
 
-if (global.game_state == game_states.GAMEOVER){
-	global.pause = true;
-}
-
-
-if (global.pause == true){
-	instance_deactivate_all(true);
-	instance_activate_object(obj_camera);
-	global.pause = false;
-}
 
 // make sure player stays out of tutorial area after
 if (room == rm_forest && global.saved_room == rm_start_0) {
