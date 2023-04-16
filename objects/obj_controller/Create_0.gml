@@ -8,6 +8,7 @@ enum game_states {
 	TALKING
 };
 
+global.saving = false;
 global.game_state = game_states.PLAYING;
 global.pause = false;
 
