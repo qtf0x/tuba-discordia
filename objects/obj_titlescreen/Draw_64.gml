@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (!action_selected){
-	draw_set_font(fnt_dialogue);
+	draw_set_font(fnt_menu);
 	draw_set_halign(fa_center);
 	if (titlescreen_state == titlescreen_states.GAME_START){draw_set_color(c_yellow);}
 	else {draw_set_color(c_white);}

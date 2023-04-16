@@ -66,7 +66,7 @@ if(hmove != 0) {
 var ladder = instance_place(x, y + 1, obj_ladder);
 if (ladder) {
 	if ( (vmove < 0 && (bbox_bottom > ladder.bbox_top) && !key_jump) ||  // Fix annoying bugs
-	   (vmove > 0 &&
+	   ((vmove > 0 && !key_jump) &&
 	   (!place_meeting(x, y + 1, obj_block)) && // Going down, is there a tile right below us?
 	   ((y < ladder.y && vsp >=0) || climbing) )) {
 		sprite_index = asset_get_index("spr_player_climb_" + current_sprite);

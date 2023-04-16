@@ -3,4 +3,4 @@ if(titlescreen_state == titlescreen_states.GAME_START){
 } else if (titlescreen_state == titlescreen_states.EXIT_GAME){
 	titlescreen_state = titlescreen_states.GAME_START;
 } 
-audio_play_sound(snd_titlescreen, 1, false);
+audio_play_sound(snd_menu_option, 1, false);

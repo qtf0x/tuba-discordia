@@ -7,10 +7,10 @@ event_inherited();
 
 if (instance_exists(obj_camera)){
 	
-	var x1 = obj_camera.cam_x;
-	var y1 = obj_camera.cam_y;
-	var x2 = x1 + obj_camera.cam_w;
-	var y2 = y1 + obj_camera.cam_h;
+	var x1 = global.cam_x;
+	var y1 = global.cam_y;
+	var x2 = x1 + global.cam_w;
+	var y2 = y1 + global.cam_h;
 	
 	// If enemy in camera frame
 	if( point_in_rectangle( x, y, 
