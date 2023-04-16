@@ -40,8 +40,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_shoot",
-    "path": "sprites/spr_player_shoot/spr_player_shoot.yy",
+    "name": "spr_player_idle_trumpet",
+    "path": "sprites/spr_player_idle_trumpet/spr_player_idle_trumpet.yy",
   },
   "spriteMaskId": null,
   "visible": true,

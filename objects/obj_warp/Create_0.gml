@@ -1,4 +1,4 @@
-target_x = 0;
-target_y = 0;
+target_x = -1;
+target_y = -1;
 target_rm = 0;
 

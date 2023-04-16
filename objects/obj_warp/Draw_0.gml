@@ -1,1 +1,1 @@
-draw_sprite_tiled_ext(sprite_index, image_index, 0, 0, 4, 4, c_white, 1);
+draw_sprite_tiled_ext(sprite_index, image_index, 0, 0, 4, 4, image_blend, 1);
