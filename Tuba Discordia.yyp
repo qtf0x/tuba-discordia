@@ -125,6 +125,7 @@
     {"id":{"name":"spr_stool","path":"sprites/spr_stool/spr_stool.yy",},},
     {"id":{"name":"obj_parallax","path":"objects/obj_parallax/obj_parallax.yy",},},
     {"id":{"name":"obj_pear_guide","path":"objects/obj_pear_guide/obj_pear_guide.yy",},},
+    {"id":{"name":"obj_trash","path":"objects/obj_trash/obj_trash.yy",},},
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
     {"id":{"name":"spr_bound_box","path":"sprites/spr_bound_box/spr_bound_box.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},

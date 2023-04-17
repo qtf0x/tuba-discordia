@@ -6,6 +6,8 @@ hit_damage = 1;
 vsp = 0;
 hsp = 0;
 
+// Additional hit variables
+is_hittable = true;
 
 //Knockback stuff
 hsp_knockback = 0;

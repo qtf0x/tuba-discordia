@@ -94,6 +94,7 @@
     {"name":"spr_stool","order":1,"path":"sprites/spr_stool/spr_stool.yy",},
     {"name":"obj_parallax","order":6,"path":"objects/obj_parallax/obj_parallax.yy",},
     {"name":"obj_pear_guide","order":7,"path":"objects/obj_pear_guide/obj_pear_guide.yy",},
+    {"name":"obj_trash","order":4,"path":"objects/obj_trash/obj_trash.yy",},
     {"name":"fnt_menu","order":2,"path":"fonts/fnt_menu/fnt_menu.yy",},
     {"name":"spr_bound_box","order":2,"path":"sprites/spr_bound_box/spr_bound_box.yy",},
     {"name":"obj_camera","order":1,"path":"objects/obj_camera/obj_camera.yy",},
