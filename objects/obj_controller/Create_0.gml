@@ -8,6 +8,9 @@ enum game_states {
 	TALKING
 };
 
+draw_tutorial = false;
+alarm[5] = 60; // 1 second (???)
+
 global.saving = false;
 global.game_state = game_states.PLAYING;
 global.pause = false;

@@ -25,3 +25,37 @@ draw_set_halign(fa_center);
 draw_set_color(c_white);
 draw_text(230, 123, string("{0}", global.coins));
 
+
+// tutorial popups
+if (draw_tutorial) {
+	// wasd
+	draw_sprite_ext(spr_wasd, 0, 75, 760, 1, 1, 0, c_white, 1);
+	
+	draw_set_font(fnt_dialogue);
+	draw_set_color(c_white);
+	draw_text(250, 740, "move/look");
+	
+	// space
+	draw_sprite_ext(spr_space, 0, 525, 760, 1, 1, 0, c_white, 1);
+	
+	draw_set_font(fnt_dialogue);
+	draw_set_color(c_white);
+	draw_text(665, 740, "jump");
+	
+	// k
+	draw_sprite_ext(spr_k, 0, 800, 760, 1, 1, 0, c_white, 1);
+	
+	draw_set_font(fnt_dialogue);
+	draw_set_color(c_white);
+	draw_text(965, 740, "play trumpet");
+	
+	// enter
+	draw_sprite_ext(spr_enter, 0, 1200, 760, 1, 1, 0, c_white, 1);
+	
+	draw_set_font(fnt_dialogue);
+	draw_set_color(c_white);
+	draw_text(1315, 740, "pause");
+}
+
+	
+	
