@@ -71,7 +71,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.200.0.299",
+    "IDEVersion": "2023.2.1.75",
   },
   "resources": [
     {"id":{"name":"spr_platform","path":"sprites/spr_platform/spr_platform.yy",},},
@@ -89,6 +89,7 @@
     {"id":{"name":"create_textevent","path":"scripts/create_textevent/create_textevent.yy",},},
     {"id":{"name":"obj_coin_silver","path":"objects/obj_coin_silver/obj_coin_silver.yy",},},
     {"id":{"name":"snd_coin_3","path":"sounds/snd_coin_3/snd_coin_3.yy",},},
+    {"id":{"name":"mus_level_1","path":"sounds/mus_level_1/mus_level_1.yy",},},
     {"id":{"name":"snd_coin_6","path":"sounds/snd_coin_6/snd_coin_6.yy",},},
     {"id":{"name":"spr_bound_box_1","path":"sprites/spr_bound_box_1/spr_bound_box_1.yy",},},
     {"id":{"name":"spr_player_walk_shoot","path":"sprites/spr_player_walk_shoot/spr_player_walk_shoot.yy",},},
@@ -171,6 +172,7 @@
     {"id":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},},
     {"id":{"name":"shd_white","path":"shaders/shd_white/shd_white.yy",},},
     {"id":{"name":"spr_pear","path":"sprites/spr_pear/spr_pear.yy",},},
+    {"id":{"name":"spr_junkie_walk","path":"sprites/spr_junkie_walk/spr_junkie_walk.yy",},},
     {"id":{"name":"snd_tom_D4","path":"sounds/snd_tom_D4/snd_tom_D4.yy",},},
     {"id":{"name":"snd_coin_1","path":"sounds/snd_coin_1/snd_coin_1.yy",},},
     {"id":{"name":"spr_frames","path":"sprites/spr_frames/spr_frames.yy",},},
@@ -260,6 +262,7 @@
     {"id":{"name":"snd_D4","path":"sounds/snd_D4/snd_D4.yy",},},
     {"id":{"name":"death_pit","path":"sprites/death_pit/death_pit.yy",},},
     {"id":{"name":"spr_player_walk_trumpet","path":"sprites/spr_player_walk_trumpet/spr_player_walk_trumpet.yy",},},
+    {"id":{"name":"spr_junkie_still","path":"sprites/spr_junkie_still/spr_junkie_still.yy",},},
     {"id":{"name":"create_dialogue","path":"scripts/create_dialogue/create_dialogue.yy",},},
     {"id":{"name":"mus_menu","path":"sounds/mus_menu/mus_menu.yy",},},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},

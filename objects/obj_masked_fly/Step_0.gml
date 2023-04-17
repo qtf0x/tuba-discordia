@@ -58,20 +58,36 @@ if (instance_exists(obj_camera)){
 		
 		
 		
-		x += _hsp + hsp_knockback;
+		x += _hsp;
 		// Horizontal collision with a block.
 		if (place_meeting(x, y, obj_block)) {
 			while (place_meeting(x + sign(_hsp), y, obj_block)) {
 				x -= sign(_hsp);
 			}
 		}
-		y += _vsp + vsp_knockback;
+		
+		x += hsp_knockback;
+		
+		if (place_meeting(x, y, obj_block)) {
+			while (place_meeting(x + sign(hsp_knockback), y, obj_block)) {
+				x -= sign(hsp_knockback);
+			}
+		}
+		
+		y += _vsp;
 		
 		
 		// Vertical collision with a block
 		if (place_meeting(x, y, obj_block)) {
 			while (place_meeting(x, y + sign(_vsp), obj_block)) {
 				y -= sign(_vsp);
+			}
+		}
+		y += vsp_knockback;
+		
+		if (place_meeting(x, y, obj_block)) {
+			while (place_meeting(x, y + sign(vsp_knockback), obj_block)) {
+				y -= sign(vsp_knockback);
 			}
 		}
 		
