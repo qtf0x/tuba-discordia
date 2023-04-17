@@ -14,11 +14,15 @@ if (global.pause){
 		// Continue
 		if (pause_state == pause_states.CONTINUE){draw_set_color(c_yellow);}
 		else {draw_set_color(c_white);}
-		draw_text(screen_width/2, 4*screen_height/8,"CONTINUE");
+		draw_text(screen_width/2, 3*screen_height/8,"CONTINUE");
 		// Restart
 		if (pause_state == pause_states.RESTART){draw_set_color(c_yellow);}
 		else {draw_set_color(c_white);}
-		draw_text(screen_width/2, 5*screen_height/8,"RESTART");
+		draw_text(screen_width/2, 4*screen_height/8,"RESTART");
+		// Controls
+		if (pause_state == pause_states.CONTROLS){draw_set_color(c_yellow);}
+		else {draw_set_color(c_white);}
+		draw_text(screen_width/2, 5*screen_height/8,"CONTROLS");
 		// quit
 		if (pause_state == pause_states.QUIT){draw_set_color(c_yellow);}
 		else {draw_set_color(c_white);}

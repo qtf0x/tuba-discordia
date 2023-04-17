@@ -1,6 +1,7 @@
 enum pause_states {
 	CONTINUE, 
 	RESTART,
+	CONTROLS,
 	QUIT
 };
 enum confirmation_states{

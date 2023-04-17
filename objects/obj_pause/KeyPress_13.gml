@@ -14,12 +14,15 @@ if (!global.pause){// Draw frozen image to screen while paused
 	buffer_get_surface(pause_surf_buffer, pause_surf, 0);
 } else {
 	audio_play_sound(snd_select, 1, false);
-	if (pause_state == pause_states.CONTINUE){ // Continue the game
+	if (pause_state == pause_states.CONTINUE || pause_state == pause_states.CONTROLS){ // Continue the game
 		audio_play_sound(snd_select, 1, false);
 		global.pause = false;
 		instance_activate_all();
 		if (surface_exists(pause_surf)) surface_free(pause_surf);
 		if (buffer_exists(pause_surf_buffer)) buffer_delete(pause_surf_buffer);
+		
+		// show controls for 30 seconds again
+		if (pause_state = pause_states.CONTROLS) obj_controller.alarm[5] = 5;
 	} else{
 		if (confirmation_state == confirmation_states.NONE){ // Either restart or quit have been selected, show confirmation screen
 			confirmation_state = confirmation_states.YES; // Go to confirmation screen
