@@ -3,7 +3,7 @@
 event_inherited();
 spd = 2;
 dir = -1;
-hp = 10;
+hp = 3;
 
 vsp = 0;    // vertical speed
 hsp = 0; // horizontal speed

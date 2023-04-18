@@ -11,7 +11,7 @@ myFont				= fnt_dialogue;
 myName				= "?????";
 
 //--------Movement Stuff
-hp = 10;		  // Health
+hp = 5;		  // Health
 max_hops = 1; // max rocket jumps
 hops = 0;     // rocket jumps performed in a row
 spd = 7;	  // baseline speed for walking
