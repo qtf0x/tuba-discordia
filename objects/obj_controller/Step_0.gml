@@ -15,7 +15,7 @@ if (room == rm_forest && global.saved_room == rm_start_0) {
 
 // check for death
 with (obj_player) {
-	if (hp <= 0) {
+	if (hp <= 0 && !instance_exists(obj_warp)) {
 		visible = false;
 		// drop coins
 		instance_destroy(obj_coin_brown);
@@ -26,7 +26,7 @@ with (obj_player) {
 		drop.value = global.coins;
 		
 		
-		if (room != global.saved_room){
+		if (room != global.saved_room ){
 			var warp = instance_create_depth(0,0,-9999, obj_warp);
 			warp.target_x = global.saved_x;
 			warp.target_y = global.saved_y;
