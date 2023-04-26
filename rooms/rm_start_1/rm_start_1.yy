@@ -77,12 +77,9 @@
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_1C3FC59D","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"death_pit","path":"sprites/death_pit/death_pit.yy",},"x":128.0,"y":704.0,},
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_6D8253FE","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"death_pit","path":"sprites/death_pit/death_pit.yy",},"x":-256.0,"y":704.0,},
       ],"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":9,"SerialiseWidth":20,"TileCompressedData":[
-1,22,-19,-2147483648,1,17,-19,-2147483648,1,4,-7,-2147483648,1,9,-7,-2147483648,4,6,7,7,
-8,-8,-2147483648,1,15,-7,-2147483648,4,18,19,19,20,-8,-2147483648,7,15,-2147483648,-2147483648,6,7,
-7,8,-5,-2147483648,-3,7,12,8,-2147483648,-2147483648,0,-2147483648,15,-2147483648,-2147483648,18,19,19,20,-5,
--2147483648,-3,13,6,14,-2147483648,-2147483648,9,-2147483648,15,-11,-2147483648,-3,13,6,14,-2147483648,-2147483648,15,-2147483648,
-15,-11,-2147483648,-9,0,-11,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"TileSet2_1","path":"tilesets/TileSet2_1/TileSet2_1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":9,"SerialiseWidth":47,"TileCompressedData":[
+1,22,-46,-2147483648,1,17,-46,-2147483648,1,4,-7,-2147483648,1,9,-7,-2147483648,4,6,7,7,8,-35,-2147483648,1,15,-7,-2147483648,4,18,19,19,20,-35,-2147483648,7,15,-2147483648,-2147483648,6,7,7,8,-32,-2147483648,-3,7,12,
+8,-2147483648,-2147483648,0,-2147483648,15,-2147483648,-2147483648,18,19,19,20,-32,-2147483648,-3,13,6,14,-2147483648,-2147483648,9,-2147483648,15,-38,-2147483648,-3,13,6,14,-2147483648,-2147483648,15,-2147483648,15,-38,-2147483648,-9,0,-38,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"TileSet2_1","path":"tilesets/TileSet2_1/TileSet2_1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"spr_cave_background_3","path":"sprites/spr_cave_background_3/spr_cave_background_3.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
   ],
   "parent": {
@@ -101,7 +98,7 @@
     "Height": 1080,
     "inheritRoomSettings": false,
     "persistent": true,
-    "Width": 2560,
+    "Width": 6000,
   },
   "sequenceId": null,
   "views": [

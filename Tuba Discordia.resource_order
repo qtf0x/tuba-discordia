@@ -109,6 +109,7 @@
     {"name":"spr_warp_transition","order":1,"path":"sprites/spr_warp_transition/spr_warp_transition.yy",},
     {"name":"spr_player_jump_shoot","order":5,"path":"sprites/spr_player_jump_shoot/spr_player_jump_shoot.yy",},
     {"name":"snd_tom_Gb4","order":12,"path":"sounds/snd_tom_Gb4/snd_tom_Gb4.yy",},
+    {"name":"rm_start_2","order":2,"path":"rooms/rm_start_2/rm_start_2.yy",},
     {"name":"spr_player_jump_default","order":2,"path":"sprites/spr_player_jump_default/spr_player_jump_default.yy",},
     {"name":"snd_Gb4","order":12,"path":"sounds/snd_Gb4/snd_Gb4.yy",},
     {"name":"mus_main","order":1,"path":"sounds/mus_main/mus_main.yy",},

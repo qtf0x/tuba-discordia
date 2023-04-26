@@ -146,6 +146,7 @@
     {"id":{"name":"spr_player_jump_shoot","path":"sprites/spr_player_jump_shoot/spr_player_jump_shoot.yy",},},
     {"id":{"name":"snd_coin_2","path":"sounds/snd_coin_2/snd_coin_2.yy",},},
     {"id":{"name":"snd_tom_Gb4","path":"sounds/snd_tom_Gb4/snd_tom_Gb4.yy",},},
+    {"id":{"name":"rm_start_2","path":"rooms/rm_start_2/rm_start_2.yy",},},
     {"id":{"name":"spr_player_jump_default","path":"sprites/spr_player_jump_default/spr_player_jump_default.yy",},},
     {"id":{"name":"snd_Gb4","path":"sounds/snd_Gb4/snd_Gb4.yy",},},
     {"id":{"name":"mus_main","path":"sounds/mus_main/mus_main.yy",},},
@@ -277,6 +278,7 @@
     {"roomId":{"name":"rm_start_1","path":"rooms/rm_start_1/rm_start_1.yy",},},
     {"roomId":{"name":"rm_forest","path":"rooms/rm_forest/rm_forest.yy",},},
     {"roomId":{"name":"rm_dev","path":"rooms/rm_dev/rm_dev.yy",},},
+    {"roomId":{"name":"rm_start_2","path":"rooms/rm_start_2/rm_start_2.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
