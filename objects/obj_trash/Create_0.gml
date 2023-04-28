@@ -6,4 +6,5 @@ hp = 3;
 
 // Is trashcan enemy hiding?
 is_hiding = false;
+has_knockback = false;
 

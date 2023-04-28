@@ -9,10 +9,13 @@ if (instance_exists(obj_player)){
 	
 
 		// don't allow play to move for a moment when bounced
-		if (on_ground){
-			obj_player.force_jump = true;
-			obj_player.jump_spd_bounce = 6;
+		
+		obj_player.force_jump = true;
+		if (keyboard_check(vk_space) && !keyboard_check(ord("k"))) {
+			obj_player.jump_spd_bounce = 10;
 		}
+		
+		
 
 		// bounce away ---------
 		player_collision = false;

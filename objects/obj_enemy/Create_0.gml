@@ -13,7 +13,7 @@ is_hittable = true;
 hsp_knockback = 0;
 vsp_knockback = 0;
 knockback_timer = 0;
-knockback_timer_multiplier = 0.25;
+knockback_timer_multiplier = 0.4;
 is_knockback = false;
 has_knockback = true;
 
