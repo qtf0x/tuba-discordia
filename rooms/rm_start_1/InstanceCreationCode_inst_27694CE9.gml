@@ -1,3 +1,4 @@
-target_x = 573;
-target_y = 85;
-target_rm = rm_forest;
+target_x = 32;
+target_y = 7360;
+target_rm = rm_start_2;
+target_color = make_colour_rgb(95, 96, 151);
