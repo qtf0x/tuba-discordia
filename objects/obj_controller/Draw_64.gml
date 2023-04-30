@@ -1,5 +1,12 @@
 // UI ------
 
+// end screen
+if (room == end_screen) {
+	draw_set_font(fnt_dialogue_big);
+	draw_set_color(c_white);
+	draw_text(room_width / 2, room_height / 2, "End of the demo\n\nThanks for playing! <3");
+} else {
+
 // health
 draw_sprite_ext(spr_frames, 7, 84, 84, 1, 1, 0, c_white, 1);
 draw_sprite_ext(spr_clef_0_green, -1, 82, 71, 0.5, 0.5, 0, c_white, 1);
@@ -56,6 +63,4 @@ if (draw_tutorial) {
 	draw_set_color(c_white);
 	draw_text(1315, 740, "pause");
 }
-
-	
-	
+}

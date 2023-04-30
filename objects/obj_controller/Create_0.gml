@@ -25,7 +25,7 @@ global.coins = 0;
 coin_frame = 0;
 image_speed = 0.1;
 
-global.max_hp = 5;
+global.max_hp = 6;
 
 // last save location
 global.saved_x = 448;
