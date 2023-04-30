@@ -19,13 +19,6 @@ global.pause = false;
 game_set_speed(60, gamespeed_fps);
 global.game_speed = game_get_speed(gamespeed_fps); // Game speed in fps
 
-// music switch
-switch (room) {
-case rm_dev:
-case rm_forest:
-	audio_play_sound(mus_main, 10, true);
-	break;
-}
 
 // coins, lives, etc.
 global.coins = 0;

@@ -6,13 +6,6 @@ if (keyboard_check_pressed(vk_escape)) {
 }
 
 
-// make sure player stays out of tutorial area after
-if (room == rm_forest && global.saved_room == rm_start_0) {
-	global.saved_x = 517;
-	global.saved_y = 2466;
-	global.saved_room = rm_forest;
-}
-
 // check for death
 with (obj_player) {
 	if (hp <= 0 && !instance_exists(obj_warp)) {

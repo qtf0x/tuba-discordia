@@ -22,11 +22,33 @@ hsp = spd * dir;
 hsp += hsp_knockback;
 
 
-if (place_meeting(x + hsp, y, obj_block)) {
+var block = instance_place(x + hsp, y, obj_block);
+
+if (block){
 	while (!place_meeting(x + sign(hsp), y, obj_block)) {
 		x += sign(hsp);
 	}
+} 
+
+var platform = instance_place(x + hsp, y, obj_platform);
+
+if (platform){
+	while (!place_meeting(x + sign(hsp), y, obj_platform)) {
+		x += sign(hsp);
+	}
+}
+
+
+
+
+
+if (platform){
+	while (!place_meeting(x + sign(hsp), y, obj_platform)) {
+		x += sign(hsp);
+	}
+}
 	
+if (block || platform){
 	dir *= -1;
 	image_xscale *= -1;
 	hsp = 0;
@@ -37,18 +59,39 @@ x += hsp;
 
 vsp += vsp_knockback;
 // Vertical collision with a block
-var block = instance_place(x, y + vsp, obj_block);
+block = instance_place(x, y + vsp, obj_block);
+
 if (block){
 	
 	while (!place_meeting(x, y + sign(vsp), block)) {
 		y += sign(vsp);
 	}
-	if (vsp >= 0 && bbox_bottom >= block.bbox_top){
+	
+	if (vsp >= 0 && (bbox_bottom >= block.bbox_top)){
 		grounded = true;
 	}
+		
+} 
+
+platform = instance_place(x, y + vsp, obj_platform);
+
+if (platform){
+	while (!place_meeting(x, y + sign(vsp), platform)) {
+		y += sign(vsp);
+	}
+	
+	if (vsp >= 0 && (bbox_bottom >= platform.bbox_top)){
+		grounded = true;
+	} 
+}
+
+	
+
+
+
+if (block || platform){
 	vsp = 0;
-	grounded = true;
-} else{
+} else {
 	grounded = false;
 }
 

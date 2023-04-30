@@ -16,7 +16,3 @@ obj_player.hp = global.max_hp;
 in_use = true;
 global.saving = true;
 
-// TODO: play animation, sound, etc.
-
-//audio_sound_set_track_position(mus_waiting, 0);
-//audio_play_sound(mus_waiting, 10, true);

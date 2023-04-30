@@ -1,0 +1,1 @@
+parallax_speed = 1;
